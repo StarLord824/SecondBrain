@@ -4,6 +4,7 @@ import adminRouter from "./routes/admin"
 import sharingRouter from "./routes/brain"
 
 const app=express()
+export const JSON_pwd= "1234random";
 
 app.use(express.json())
 

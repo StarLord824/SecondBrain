@@ -6,4 +6,12 @@ const UserSchema= new mongoose.Schema({
     pwd: String
 })
 
+const contentSchema=new mongoose.Schema({
+    title: String,
+    content: String,
+    link: String,
+    creatorId: mongoose.Schema.Types.ObjectId
+})
+
 export const UserModel= mongoose.model( "User" ,UserSchema)
+export const ContentModel= mongoose.model( "Content" ,contentSchema)
